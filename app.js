@@ -3,6 +3,9 @@ const homeofiice = document.querySelector('.abre-popup-homeofiice')
 const iot = document.querySelector('.abre-popup-iot')
 const arduino = document.querySelector('.abre-popup-arduino')
 
+const popup_wrapper = document.querySelector('.popup-wrapper')
+
+
 const popup =document.querySelector('.popup-wrapper')
 const CloseButton = document.querySelector('.popup_close')
 
@@ -27,3 +30,6 @@ CloseButton.addEventListener('click', ()=> {
 })
 
 
+popup_wrapper.addEventListener('click', ()=> {
+  popup.style.display = 'none'
+})

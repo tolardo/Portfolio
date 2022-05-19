@@ -78,12 +78,13 @@
   
   }
   .popup{
-    font-family: Arial;
     
+    font-family: Arial;
     width: 100%;
     max-width: 600px;
     margin: 10% auto;
-    padding: 20px;
+    
+    padding: px 20px;
     background: white;
     position: relative;
     border-radius: 7px;
@@ -112,29 +113,9 @@
  /* --------------------------------------------------------------------
  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1200px) {
     .portfolio {
-        grid-template-columns: 285px 285px 285px;
+        grid-template-columns: auto auto auto;
         gap: 20px 20px;
     }
 
@@ -148,7 +129,7 @@
 
 @media (max-width: 900px) {
     .portfolio {
-        grid-template-columns: 285px 285px;
+        grid-template-columns: auto auto;
         gap: 20px 20px;
     }
 
@@ -160,8 +141,10 @@
 
 @media (max-width: 600px) {
     .portfolio {
-        grid-template-columns: 285px;
+        grid-template-columns: auto;
+        align-items: center;
         gap: 20px 20px;
+        max-width: 600px;
 
     }
 
@@ -169,4 +152,36 @@
         border-radius: 0px 0px 10px 10px;
 
     }
+    .abre-popup-arduino{
+       max-width: 100%; 
+    }
+    .popup{
+        border-radius: 0px;
+      }
+}
+@media (max-width:500px){
+    .portfolio{
+        gap: 0px 0px;
+    }
+    .portfolio a img {
+        border-radius: 7px;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .portfolio a p {
+        
+        justify-content: center;
+        text-align: center;
+        position: absolute ; 
+
+    }
+
+    .popup{
+        border-radius: 0px;
+
+      }
+
 }
